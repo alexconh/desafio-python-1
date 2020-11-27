@@ -1,6 +1,7 @@
 /*Estilos mobile - 375px-767px*/
 .section1{
     background-color: hsl(217, 28%, 15%);
+    
   }
 .logo{
     width: 30%;
@@ -26,9 +27,9 @@
 .header-menu ul li a:hover
   {
     text-decoration: underline;
+    font-weight: bold;
   }
   .div-section{
-    border: 1px solid greenyellow;
     display: flex;
     flex-direction: column;
     justify-content:center;
@@ -67,6 +68,7 @@
     border-radius: 20px;
     height: 30px;
     width: 120px;
+    margin-bottom: 10%;
   }
   .btn-section1:hover{
     background-color: $color-cyan-btn;
@@ -90,7 +92,6 @@
       font-size: 14px;
     }
   .h1-section1{
-      font-family: $font-body;
       font-size: 26px;
       padding-top: 20px;
     }

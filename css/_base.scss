@@ -1,14 +1,19 @@
-* {
-    margin: 0;
-    padding: 0;
+*{
+    margin: 0px; 
+    padding: 0px;
     box-sizing: border-box;
-  }
-  
-  body {
+}
+
+body {
+    font-family: 'Open Sans';
     font-size: 14px;
-    font-family: Open Sans;
-  }
-  
+    cursor: pointer;
+}
 img{
-    max-width: 100%;
+  max-width: 100%;
+}
+footer{
+    color: $color-white;
+    font-size: 14px;
+    font-family: $font-body;
 }
