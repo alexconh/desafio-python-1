@@ -1,6 +1,10 @@
 .container-segunda-seccion{
     background-color: $color-main-bg;
     color: $color-white;
+    h3{
+        font-family:'Raleway';
+        letter-spacing: 1px;
+    }
     div.caracteristicas{
         img {
             margin: 30px;
@@ -12,6 +16,26 @@
         width: 300px;
         height: 310px;
         margin: 0 auto;
+    }
+    .seccion-caracteristicas{
+        @include tablet{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: baseline;
+            margin: unset;
+            padding: 0 20%;
+            p{
+                max-width: 300px;
+                /* font-size: 12px; */
+                font-weight: lighter;
+                margin: 0 auto;
+            }
+            div.caracteristicas{
+                width:45%;
+                margin:0 auto;
+            }
+        }
     }
     .seccion-stay-productive{
         #stay-productive-img{
@@ -33,6 +57,30 @@
                 border-bottom: 2px solid $color-cyan-btn;
             }
         }
+        @include tablet{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h3{
+                width: 200px;
+                font-size: 22px;
+            }
+            p{
+                /* font-size: 12px; */
+                font-weight: lighter;
+            }
+            #stay-productive-img{
+                width: 45%;
+                max-width: 600px;
+                margin: 20px 0;
+            }
+            div.stay-productive-info{
+                width:45%;
+                max-width:400px;
+                margin: unset;
+                margin-left:40px;
+            }
+        }
     }
     .seccion-testimonios{
         /* position: relative;
@@ -48,9 +96,6 @@
                 left:15px;
                 /* z-index: 2; */
             }
-        }
-        article.testimonio:last-of-type{
-            margin-bottom: 0;
         }
         article.testimonio{
             padding: 20px;
@@ -77,6 +122,15 @@
                         line-height: 1;
                     }
                 }
+            }
+        }
+        @include tablet{
+            display: flex;
+            justify-content: center;
+            padding: 100px 8%;
+            article.testimonio{
+                margin: 10px 10px;
+                max-width:337px;
             }
         }
     }
