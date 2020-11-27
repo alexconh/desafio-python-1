@@ -1,0 +1,113 @@
+/*Estilos mobile - 375px-767px*/
+.section1{
+    background-color: hsl(217, 28%, 15%);
+    
+  }
+.logo{
+    width: 30%;
+    padding: 20px;
+  }
+.header-menu{
+    display: flex;
+    justify-content: space-between;
+  }
+.header-menu ul{
+     list-style: none;
+     display: flex;
+     width: 50%;
+     justify-content: space-around;
+     align-items: center;
+  }
+.header-menu ul li a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    font-family: $font-head;
+    font-size: 8px;
+  }
+.header-menu ul li a:hover
+  {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  .div-section{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-image: url(/assets/images/bg-curvy-mobile.svg);
+    background-repeat:no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+  }
+  /*
+  .img-section1
+  {
+    border: 1px solid yellowgreen;
+  }*/
+  .h1-section1{
+    display: block;
+    color:hsl(0, 0%, 100%);
+    text-align: center;
+    font-family: $font-head;
+    width: 95%;
+    margin: 0 auto;
+  }
+  .p-section1{
+    padding-top: 10px;
+    color:hsl(0, 0%, 100%);
+    font-size: 10px;
+    text-align: center;
+    width: 95%;
+    padding-bottom: 10px;
+  }
+  .btn-section1{
+    color: hsl(0,0%,100%);
+    background-color: $color-blue-btn;
+    border-radius: 20px;
+    height: 30px;
+    width: 120px;
+    margin-bottom: 10%;
+  }
+  .btn-section1:hover{
+    background-color: $color-cyan-btn;
+  }
+  /* desktop*/
+  /*min-width:768 ->*/
+  @media only screen and (min-width:768px){
+    /**/
+  .logo{
+      width: 20%;
+      padding: 30px;
+    }
+  .header-menu{
+      justify-content: space-between;
+    }
+  .header-menu ul{
+       width: 40%;
+    }
+  .header-menu ul li a{
+      font-family: $font-head;
+      font-size: 14px;
+    }
+  .h1-section1{
+      font-size: 26px;
+      padding-top: 20px;
+    }
+  .p-section1{
+      padding-top: 20px;
+      font-family: $font-body;
+      font-size: 14px;
+      text-align:center;
+      width: 80%;
+      padding-bottom: 20px;
+    }
+  .btn-section1{
+      border-radius: 30px;
+      height: 40px;
+      width: 220px;
+    }
+
+
+  }

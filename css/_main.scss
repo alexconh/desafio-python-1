@@ -55,7 +55,14 @@
                 text-decoration: none;
                 color: $color-cyan-btn;
                 border-bottom: 2px solid $color-cyan-btn;
+               
             }
+            a:hover{
+                color: white;
+                border-bottom: 2px solid white;
+                
+            }
+
         }
         @include tablet{
             display: flex;
