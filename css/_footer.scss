@@ -58,7 +58,7 @@
          @include tablet(){
             margin: 0 8%;
         }
-        }
+     }
      
      #input-button{
         @include tablet(){
@@ -67,14 +67,19 @@
 
         .input-footer{
             font-size: 10px;
-        
+            &:focus:invalid ~.msj::after{
+                content: 'Please enter a valid email address';
+                font-size: 12px;
+                color: $color-error;
+                display: flex;
+                justify-content: center;
             }
-            
            
             @include tablet(){
-                width: 350px;
+                width: 300px;
                 height: 50px;
-                margin-right: 3%;
+                margin-left: 3%;
+                margin-right: -10px;
             }
 
             @include desktop(){
@@ -85,17 +90,16 @@
 
         .btn-footer{
             @include tablet(){
-                padding-top: 20px;
-                width: 250px;
-                height: 60px;
+                padding-top: 15px;
+                width: 220px;
+                height: 50px;
                 font-size: 13px;
-                margin-left: 0;
+                margin-right: 0%;
             }
 
             @include desktop(){
-                margin-right: 0;
-                padding-top: 18px;
-                width: 200px;
+                padding-top: 15px;
+                width: 220px;
                 height: 50px;
                }
         }

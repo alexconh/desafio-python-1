@@ -458,15 +458,24 @@ footer {
   font-size: 10px;
 }
 
-.container-footer #input-button .input-footer:active {
-  color: red;
+.container-footer #input-button .input-footer:focus:invalid ~ .msj::after {
+  content: 'Please enter a valid email address';
+  font-size: 12px;
+  color: #ff4242;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media only screen and (min-width: 768px) {
   .container-footer #input-button .input-footer {
-    width: 350px;
+    width: 300px;
     height: 50px;
-    margin-right: 3%;
+    margin-left: 3%;
+    margin-right: -10px;
   }
 }
 
@@ -479,19 +488,18 @@ footer {
 
 @media only screen and (min-width: 768px) {
   .container-footer #input-button .btn-footer {
-    padding-top: 20px;
-    width: 250px;
-    height: 60px;
+    padding-top: 15px;
+    width: 220px;
+    height: 50px;
     font-size: 13px;
-    margin-left: 0;
+    margin-right: 0%;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   .container-footer #input-button .btn-footer {
-    margin-right: 0;
-    padding-top: 18px;
-    width: 200px;
+    padding-top: 15px;
+    width: 220px;
     height: 50px;
   }
 }
